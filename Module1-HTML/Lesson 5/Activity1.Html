@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KidsCare — Health Guide</title>
+    <style>
+      :root {
+        --bg: #f3f7ff;
+        --surface: #ffffff;
+        --primary: #3f72af;
+        --accent: #f7b32b;
+        --text: #1f2937;
+        --muted: #556987;
+        --radius: 24px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(
+          180deg,
+          #eaf2ff 0%,
+          #f8faff 55%,
+          #ffffff 100%
+        );
+        color: var(--text);
+        line-height: 1.6;
+      }
+
+      header {
+        background:
+          radial-gradient(
+            circle at top left,
+            rgba(63, 114, 175, 0.16),
+            transparent 45%
+          ),
+          linear-gradient(90deg, #3f72af 0%, #69a7de 100%);
+        color: white;
+        padding: 2rem 1.5rem;
+        text-align: center;
+      }
+
+      header h1 {
+        margin: 0 0 0.75rem;
+        font-size: clamp(2rem, 4vw, 3rem);
+        letter-spacing: -0.03em;
+      }
+
+      nav {
+        display: inline-flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+        padding: 0.7rem 1rem;
+        border: 1px solid rgba(255, 255, 255, 0.45);
+        border-radius: 999px;
+        transition:
+          transform 0.2s ease,
+          background 0.2s ease;
+      }
+
+      nav a:hover,
+      nav a:focus-visible {
+        background: rgba(255, 255, 255, 0.18);
+        transform: translateY(-1px);
+      }
+
+      main {
+        max-width: 1120px;
+        margin: 0 auto;
+        padding: 2rem 1.5rem 3rem;
+        display: grid;
+        grid-template-columns: 1.7fr 1fr;
+        gap: 1.5rem;
+        align-items: start;
+      }
+
+      article,
+      aside {
+        background: var(--surface);
+        border-radius: var(--radius);
+        box-shadow: 0 18px 45px rgba(15, 35, 80, 0.08);
+        padding: 1.75rem;
+      }
+
+      article h2 {
+        margin-top: 0;
+        color: var(--primary);
+        font-size: 1.9rem;
+      }
+
+      article p {
+        margin: 1rem 0;
+      }
+
+      figure {
+        margin: 1.75rem 0 0;
+        border-radius: 22px;
+        overflow: hidden;
+      }
+
+      figure img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      figcaption {
+        background: #eef4ff;
+        padding: 1rem;
+        font-size: 0.97rem;
+        color: var(--muted);
+        text-align: center;
+      }
+
+      aside h3 {
+        margin-top: 0;
+        color: var(--primary);
+      }
+
+      aside ul {
+        padding-left: 1.2rem;
+        margin: 1rem 0 0;
+        color: var(--muted);
+        display: grid;
+        gap: 0.85rem;
+      }
+
+      aside li {
+        padding: 0.85rem 1rem;
+        background: #f7f9ff;
+        border-radius: 16px;
+        list-style: none;
+      }
+
+      aside li::before {
+        content: "•";
+        display: inline-block;
+        width: 1rem;
+        color: var(--accent);
+        margin-left: -1rem;
+      }
+
+      .video-block {
+        grid-column: 1 / -1;
+        background: var(--surface);
+        border-radius: var(--radius);
+        padding: 1.5rem;
+        box-shadow: 0 18px 45px rgba(15, 35, 80, 0.08);
+      }
+
+      .video-block h2 {
+        margin-top: 0;
+        color: var(--primary);
+      }
+
+      .video-wrapper {
+        position: relative;
+        padding-top: 56.25%;
+        overflow: hidden;
+        border-radius: 20px;
+        margin-top: 1rem;
+        background: #000;
+      }
+
+      .video-wrapper iframe {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        border: 0;
+      }
+
+      footer {
+        text-align: center;
+        color: var(--muted);
+        padding: 1.2rem 1.5rem 2rem;
+        font-size: 0.95rem;
+      }
+
+      @media (max-width: 900px) {
+        main {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 620px) {
+        header {
+          padding: 1.5rem 1rem;
+        }
+
+        nav {
+          gap: 0.75rem;
+        }
+
+        article,
+        aside,
+        .video-block {
+          padding: 1.25rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>&#10084; KidsCare — Your Health Guide</h1>
+      <nav>
+        <a href="#health">Stay Healthy</a>
+        <a href="#tips">Quick Tips</a>
+        <a href="#media">Watch &amp; Learn</a>
+      </nav>
+    </header>
+
+    <main>
+      <article id="health">
+        <h2>&#128170; Why Your Body Needs Exercise</h2>
+        <p>
+          Your body is like a supercar — the more you use it, the stronger it
+          gets! Kids who move for <strong>60 minutes every day</strong> are
+          happier, sleep better, and do better at school.
+        </p>
+        <p>
+          Dancing, swimming, football, yoga — anything that gets your heart
+          beating faster counts. Keep moving and have fun!
+        </p>
+        <figure>
+          <img
+            src="https://images.pexels.com/photos/8941650/pexels-photo-8941650.jpeg?auto=compress&cs=tinysrgb&w=700&h=700&fit=crop"
+            alt="Kids playing soccer on a sunny day"
+          />
+          <figcaption>
+            &#127939; Active kids are healthier and happier every day!
+          </figcaption>
+        </figure>
+      </article>
+
+      <aside id="tips">
+        <h3>&#9728; Quick Health Tips</h3>
+        <ul>
+          <li>&#127822; Eat 5 fruits and veggies every day</li>
+          <li>&#128167; Drink 8 glasses of water daily</li>
+          <li>&#128564; Sleep 9 to 11 hours every night</li>
+          <li>&#127939; Move your body for 60 minutes</li>
+        </ul>
+      </aside>
+
+      <section class="video-block">
+        <h2 id="media">&#127909; Watch &amp; Learn</h2>
+        <div class="video-wrapper">
+          <iframe
+            src="https://www.youtube.com/embed/KrIPt0fi9vk"
+            title="Kids Health Video"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        Copyright &#169; 2024 KidsCare | Built by a future web developer
+        &#128512;
+      </p>
+    </footer>
+  </body>
+</html>
