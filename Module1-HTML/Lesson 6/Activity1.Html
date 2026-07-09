@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>M1 L6 doctor flinders appointment</title>
+  </head>
+  <body>
+    <h1>Flinders hospital appointment form</h1>
+    <p>Fill in this form for an appointment</p>
+    <p></p>
+
+    <form>
+      <fieldset>
+        <legend>Patient details</legend>
+        <label for="my-name">Your name:</label><br />
+        <input
+          type="text"
+          id="my-name"
+          name="name"
+          placeholder="Enter your full name"
+        /><br /><br />
+        <label for="my-id">Patient ID</label><br />
+        <input
+          type="password"
+          id="my-id"
+          name="Patient-ID"
+          placeholder="Enter your Patient ID"
+        /><br /><br />
+        <label for="my-dob">Dob</label><br />
+        <input
+          type="Date"
+          id="my-dob"
+          name="Date-of-birth"
+          placeholder="Enter your Date of birth"
+        /><br /><br />
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>Visit details</legend>
+        <label>Reason for visit</label> <br />
+        <input type="radio" name="reason" id="fever" /> Fever <br />
+        <input type="radio" name="reason" id="Cold" /> Cold <br />
+        <input type="radio" name="reason" id="Headache" /> Headache <br />
+        <input type="radio" name="reason" id="Injury" /> Minor injury <br />
+        <br />
+        <label for="doctor">Select doctor</label>
+        <select name="doctor" id="doctor">
+          <option value="">Select a doctor</option>
+          <option value="Dr.Mitchel">Dr. Mitchel - General</option>
+          <option value="Dr-Smith">Dr. Smith - Xray</option>
+          <option value="Dr-Anderson">Dr. Anderson - Orthodontist</option>
+          <br /></select
+        ><br /><br />
+        <label for="Notes">Additional Notes</label>
+        <textarea
+          name="Notes"
+          id="Notes"
+          placeholder="Broken leg"
+          rows="5"
+          cols="50"
+        ></textarea>
+      </fieldset><br>
+      <fieldset>
+        <legend>Date of visit</legend>
+        <input type="checkbox" name="Visitor-day"> Mon <br>
+        <input type="checkbox" name="Visitor-day"> Tue <br>
+        <input type="checkbox" name="Visitor-day"> Wed <br>
+        <input type="checkbox" name="Visitor-day"> Thu <br>
+        <input type="checkbox" name="Visitor-day"> Fri <br>
+        <input type="checkbox" name="Visitor-day"> Sat <br>
+        <input type="checkbox" name="Visitor-day"> Sun <br>
+      </fieldset> <br>
+      <input type="submit" value="Book an appointment">
+    </form>
+  </body>
+</html>
