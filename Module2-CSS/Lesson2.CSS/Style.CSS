@@ -1,0 +1,33 @@
+body{
+    background-color: #681993;
+    background-image: linear-gradient(90deg, #681993, #FF6EC7);
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.page-header
+{
+    background-image: linear-gradient(to right, midnightblue, lightblue);
+border-radius: 25px;
+text-align: center;
+color: black;
+padding: 1px;
+}
+.fact-card{
+    background-image: linear-gradient(to left, midnightblue, lightblue);
+  border-radius: 25px;
+  padding:2px;
+  margin-top: 5px;
+}
+.star{
+    height: 50px;
+    width: 50px;
+    background:Red ;
+    border-radius: 50%;
+    animation: apple 10s infinite alternate
+}
+
+@keyframes apple{
+0%{background: green; transform: translateX(0)}
+50%{background: red}
+100%{background: black; transform: translateX(1000px);}
+}
