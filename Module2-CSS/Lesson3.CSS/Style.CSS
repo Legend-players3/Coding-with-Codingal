@@ -1,0 +1,65 @@
+/* Typography — font, size, weight, colour for the whole page */
+body {
+  background-color: midnightblue;
+  color: white;
+  font-family: "EB GARAMOND";
+}
+
+/* Typography + Text Shadow — big bold title with an orange shadow */
+.hero-name {
+    font-weight: 800;
+    font-size: 2.7rem;
+    text-shadow:
+0 0 15px orange,
+0 0 30px rgb(255, 196, 0),
+0 0 60px rgba(255, 149, 0, 0.4),
+0 0 90px rgba(255, 136, 0, 0.2),
+0 0 120px rgba(0, 180, 255, 0.1);
+}
+
+/* Typography + Text Transform — tagline becomes Title Case */
+.tagline {
+    font-style: italic;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+/* Text Transform + Text Decoration — section headings in CAPS with underline */
+.label {
+    text-decoration: underline;
+    text-transform: capitalize;
+}
+
+/* Typography — powers stand out in bold green */
+.power {
+    font-weight: bold;
+    color: Purple;
+}
+
+/* Text Decoration — weaknesses are crossed out */
+.weakness {
+    color: crimson;
+    text-decoration: line-through;
+}
+
+/* Transform — the badge is tilted to the side */
+.badge {
+  font-size: 28px;
+  font-weight: bold;
+  color: black;
+  background-color: gold;
+  padding: 5px;
+  border-radius: 5px;
+  transform:rotate(5deg);
+  display:inline-block;
+  transition: all 0.5s;
+}
+
+.badge:hover{
+    transform:rotate(15deg);
+}
+
+/* Typography — footer text */
+.made-by {
+  color: coral;
+}
