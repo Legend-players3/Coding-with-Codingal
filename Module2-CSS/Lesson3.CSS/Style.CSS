@@ -57,6 +57,15 @@ body {
 
 .badge:hover{
     transform:rotate(15deg);
+    letter-spacing: 2px;
+    animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce{
+    0%{
+        transform: rotate(-15deg);
+        letter-spacing: 2px;
+    }
 }
 
 /* Typography — footer text */
