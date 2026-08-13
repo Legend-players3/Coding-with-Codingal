@@ -1,0 +1,34 @@
+/* Page background — sets the colour and font for the whole page */
+body {
+  background: linear-gradient(to right, #2e8b57, #86d9ac);
+  font-family: Arial, sans-serif;
+}
+
+/* Box Model — width sets the content area
+       padding pushes the text away from the edges
+       border draws a visible frame around the fact file
+       margin pushes the fact file away from the screen edge */
+.fact-file {
+  background-color: wheat;
+  border: 0.5rem double;
+  background-image: radial-gradient(circle, white 2px, transparent 3px);
+  background-size: 20px 20px;
+  background-repeat: repeat;
+  background-position: top center;
+  padding: 0.65rem;
+  width: 300px;
+  text-align: center;
+}
+
+/* Animal name — forestgreen so it stands out */
+
+/* Detail rows — dark text on the light background */
+.detail {
+  color: blue;
+}
+/* Cool fact — orange and italic to make it feel special */
+
+.fact-parent{
+    display: flex;
+justify-content: center;
+}
