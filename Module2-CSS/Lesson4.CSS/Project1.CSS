@@ -1,7 +1,12 @@
 body{
     background: beige;
     font-family: 'Times New Roman', Times, serif;
+
 }
+
 h1{
-    background: linear-gradient(red, blue );
+    background: linear-gradient(red, orange);
+    padding: 5px;
+    text-align: center;
+    :hover
 }
