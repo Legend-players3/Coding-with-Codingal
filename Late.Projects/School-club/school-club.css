@@ -1,0 +1,8 @@
+.bowling{
+    border: 2px double;
+    padding: 12px 20px;
+    margin-bottom: 12px;
+    text-align: center;
+    width: 150px;
+    background-color: wheat;
+}
