@@ -79,7 +79,7 @@ body {
 }
 
 .weather {
-  background-color: rgb(56, 81, 156);
+  background: linear-gradient(#434563, #423c95);
   border: 0.5rem double;
   background-size: 20px 20px;
   background-repeat: repeat;
