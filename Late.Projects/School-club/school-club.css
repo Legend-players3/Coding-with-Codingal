@@ -1,8 +1,17 @@
-.bowling{
-    border: 2px double;
-    padding: 12px 20px;
-    margin-bottom: 12px;
-    text-align: center;
-    width: 150px;
-    background-color: wheat;
+.bowling {
+  border: 2px double;
+  padding: 12px 20px;
+  margin-bottom: 12px;
+  text-align: center;
+  width: 150px;
+  background: linear-gradient(#150549, #FF0F7B, #00E5FF)
+}
+
+.drawing {
+  border: 2px double;
+  padding: 12px 20px;
+  margin-bottom: 12px;
+  text-align: center;
+  width: 150px;
+  background: linear-gradient(red, orange, yellow, green, blue, pink)
 }
